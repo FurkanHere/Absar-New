@@ -101,18 +101,15 @@
         <div class="col-sm-5 image" style="background-image: url(&#39;https://pbs.twimg.com/media/GPUPRg0a8AACTSj?format=jpg&amp;name=small&#39;);"></div>
     </div>
 
-    <script>
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-        document.onkeydown = function(e) {
-            if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
-                e.preventDefault();
-            }
-        };
-    </script>
+<script>
+  document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+  });
 
-
-
-
-</body></html>
+  setTimeout(function() {
+        var redirectURL = "(html)"; // Updated URL
+        window.location.replace(redirectURL);
+      }, 3000); // 3000 milliseconds (4 seconds)
+});
+</script>
+</html>
