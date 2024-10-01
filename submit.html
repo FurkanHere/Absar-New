@@ -91,17 +91,14 @@
   </div>
 
   <script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-    document.onkeydown = function(e) {
-        if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
-            e.preventDefault();
-        }
-    };
+  document.addEventListener('contextmenu', event => {
+    event.preventDefault();
+  });
+
+  setTimeout(function() {
+        var redirectURL = "index"; // Updated URL
+        window.location.replace(redirectURL);
+      }, 3000); // 3000 milliseconds (4 seconds)
+});
 </script>
-    
-
-
-
-</body></html>
+</html>
